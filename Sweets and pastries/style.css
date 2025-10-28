@@ -1,0 +1,278 @@
+
+/*  اعدادات عامة  */
+*{box-sizing:border-box}
+html,body{height:100%}
+
+body{
+    margin:0;
+    padding:20px;
+    background: linear-gradient(180deg, #FAF9F7, #fff);
+    font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color:#111;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    direction:rtl;
+}
+
+/*  رأس الصفحة  */
+header{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    margin-bottom:20px;
+}
+
+.topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+}
+
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.brand img{
+    width:72px;
+    height:72px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+    border: 3px solid rgba(0,0,0,0.03);
+    background:#fff;
+}
+
+.brand .logo{
+    margin:0;
+    font-size:20px;
+    font-weight:800;
+    letter-spacing:0.4px;
+    text-transform:capitalize;
+}
+
+.brand .tag{
+    display:block;
+    font-size:13px;
+    color:#6b6b6b;
+    margin-top:2px;
+    font-weight:600;
+}
+
+
+form.search{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:#ffffff;
+    padding:8px;
+    border-radius:10px;
+    box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+    width:360px;
+    max-width:100%;
+}
+
+form.search input[type="text"]{
+    border:0;
+    outline:0;
+    flex:1;
+    font-size:15px;
+    padding:8px 6px;
+    background:transparent;
+    color:#111;
+}
+
+form.search button{
+    background:#d84315;
+    color:#fff;
+    border:0;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:700;
+    box-shadow: 0 4px 10px rgba(216,67,21,0.18);
+}
+
+form.search button:hover{
+    background:#b83312;
+}
+
+
+nav.main-nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+    background:transparent;
+}
+
+nav.main-nav ul{
+    list-style:none;
+    display:flex;
+    gap:12px;
+    padding:0;
+    margin:0;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+nav.main-nav ul li a{
+    display:inline-block;
+    padding:8px 12px;
+    text-decoration:none;
+    color:#6b6b6b;
+    font-weight:700;
+    border-radius:8px;
+    transition:all .18s ease;
+}
+
+nav.main-nav ul li a:hover{
+    background:rgba(216,67,21,0.08);
+    color:#b83312;
+    transform:translateY(-2px);
+}
+
+/*  مقدمة الصفحة  */
+article.intro{
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:18px;
+    box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+}
+
+article.intro h1{
+    margin:0 0 6px 0;
+    font-size:28px;
+    font-weight:800;
+}
+
+article.intro h2{
+    margin:0 0 12px 0;
+    font-size:16px;
+    color:#6b6b6b;
+    font-weight:700;
+}
+
+article.intro p{
+    margin:0;
+    line-height:1.7;
+    color:#333;
+    white-space:pre-line;
+}
+
+/*  قسم المنتجات  */
+section.products{
+    margin:18px 0;
+}
+
+section.products h2{
+    margin:0 0 12px 0;
+    font-size:20px;
+    font-weight:800;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:18px;
+}
+
+
+.product{
+    background:#ffffff;
+    border-radius:12px;
+    padding:12px;
+    text-align:center;
+    box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+    transition:transform .18s ease, box-shadow .18s ease;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.product:hover{
+    transform:translateY(-6px);
+    box-shadow: 0 18px 36px rgba(16,24,40,0.12);
+}
+
+.product img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.product p{
+    margin:0;
+    font-weight:700;
+    color:#222;
+}
+
+.product .price{
+    color:#d84315;
+    font-size:16px;
+}
+
+.product button{
+    margin-top:8px;
+    background:linear-gradient(180deg,#d84315,#b83312);
+    color:#fff;
+    border:0;
+    padding:10px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:800;
+    width:100%;
+    transition:opacity .12s ease, transform .12s ease;
+}
+.product button:hover{
+    opacity:0.95;
+    transform:translateY(-2px);
+}
+
+/*  آراء العملاء  */
+article.reviews{
+    margin-top:18px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:12px;
+}
+
+.review{
+    background:#ffffff;
+    padding:12px;
+    border-radius:10px;
+    box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+}
+
+.review h3{
+    margin:0 0 8px 0;
+    font-size:15px;
+}
+
+.review p{
+    margin:0;
+    color:#6b6b6b;
+    line-height:1.6;
+}
+
+/* التذليل   */
+footer{
+    margin-top:22px;
+    text-align:center;
+    color:#6b6b6b;
+    font-size:14px;
+}
+
+footer a{
+    color:#d84315;
+    text-decoration:none;
+    font-weight:700;
+}
+
