@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حلويات ومعجنات</title>
+
+  <!-- Bootstrap -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background: linear-gradient(180deg, #FAF9F7, #fff);
+      font-family: "Tajawal", sans-serif;
+      color: #333;
+    }
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .navbar-brand img {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+    }
+    .intro {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .intro h1 {
+      font-weight: 800;
+      color: #d84315;
+    }
+    .intro h2 {
+      font-size: 20px;
+      color: #6b6b6b;
+      margin-bottom: 20px;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+      color: #6b6b6b;
+    }
+    footer a {
+      color: #d84315;
+      text-decoration: none;
+      margin: 0 5px;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    /* تحسين مسافة الحقول داخل البحث */
+    .navbar .form-control {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- رأس الصفحة Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="Logo.jpg" alt="Logo">
+        <span class="fw-bold">حلويات ومعجنات</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">حول</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">المنتجات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">آراء العملاء</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">تواصل معنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">سلة التسوق</a></li>
+        </ul>
+        <!-- نموذج البحث -->
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="بحث" aria-label="بحث">
+          <button class="btn btn-danger" type="submit">بحث</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- مقدمة -->
+  <section class="intro container">
+    <h1>حلويات ومعجنات</h1>
+    <h2>طعم ينسيك الحكاية</h2>
+    <p>
+      مرحباً بكم في متجرنا الإلكتروني لحلويات ومعجنات.<br>
+      نحن نقدم لكم مجموعة متنوعة من الحلويات والمعجنات المصنوعة بعناية وفقاً لمعاييرنا العالية.<br>
+      سواء كنت تبحث عن حلويات عائلية أو معجنات خاصة، نحن هنا لمساعدتك في اختيار ما يناسب احتياجاتك.
+    </p>
+  </section>
+
+  <!-- قسم المنتجات -->
+  <section class="container my-5">
+    <h2 class="text-center fw-bold mb-4 text-danger">منتجاتنا</h2>
+    <div class="row g-4">
+
+      <!-- بقلاوة بالفستق -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <img src="Baklava.jpg" class="card-img-top" alt="Baklava">
+          <div class="card-body">
+            <h5 class="card-title">بقلاوة بالفستق</h5>
+            <p class="card-text text-danger fw-bold">170 ريال</p>
+            <button class="btn btn-danger">أضف للسلة</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- بسبوسة بالقشطة -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <img src="basbosa.jpg" class="card-img-top" alt="Basbosa">
+          <div class="card-body">
+            <h5 class="card-title">بسبوسة بالقشطة</h5>
+            <p class="card-text text-danger fw-bold">75 ريال</p>
+            <button class="btn btn-danger">أضف للسلة</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- خلية النحل -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <img src="beehive.jpg" class="card-img-top" alt="Beehive">
+          <div class="card-body">
+            <h5 class="card-title">خلية نحل</h5>
+            <p class="card-text text-danger fw-bold">60 ريال</p>
+            <button class="btn btn-danger">أضف للسلة</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- كيك -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <img src="cake.jpg" class="card-img-top" alt="Cake">
+          <div class="card-body">
+            <h5 class="card-title">كيك</h5>
+            <p class="card-text text-danger fw-bold">130 ريال</p>
+            <button class="btn btn-danger">أضف للسلة</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- كوكيز كلاسيك -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <img src="coockies.jpg" class="card-img-top" alt="Cookies">
+          <div class="card-body">
+            <h5 class="card-title">كوكيز كلاسيك</h5>
+            <p class="card-text text-danger fw-bold">170 ريال</p>
+            <button class="btn btn-danger">أضف للسلة</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- كنافة -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <img src="conafah.jpg" class="card-img-top" alt="Kunafa">
+          <div class="card-body">
+            <h5 class="card-title">كنافة لذيذة</h5>
+            <p class="card-text text-danger fw-bold">80 ريال</p>
+            <button class="btn btn-danger">أضف للسلة</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- بيتزا -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <img src="pizza.jpg" class="card-img-top" alt="Pizza">
+          <div class="card-body">
+            <h5 class="card-title">بيتزا</h5>
+            <p class="card-text text-danger fw-bold">70 ريال</p>
+            <button class="btn btn-danger">أضف للسلة</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- سينابون -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <img src="cinnabon.jpg" class="card-img-top" alt="Cinnabon">
+          <div class="card-body">
+            <h5 class="card-title">سينابون</h5>
+            <p class="card-text text-danger fw-bold">140 ريال</p>
+            <button class="btn btn-danger">أضف للسلة</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- آراء العملاء -->
+  <section class="container my-5">
+    <h2 class="text-center fw-bold mb-4 text-danger">آراء العملاء</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-3 shadow-sm h-100">
+          <h5>منار</h5>
+          <p class="text-muted">الموقع رائع وسهل الاستخدام وأصنافه متنوعة وجميلة.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 shadow-sm h-100">
+          <h5>محمد</h5>
+          <p class="text-muted">جربت السينابون وكان لذيذ جداً! أكيد بجرب باقي الأصناف.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 shadow-sm h-100">
+          <h5>زياد</h5>
+          <p class="text-muted">المنتجات رائعة وجودتها عالية، أنصح بالتجربة!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- التذييل -->
+  <footer>
+    <div>
+      <a href="https://facebook.com">Facebook</a> |
+      <a href="https://instagram.com">Instagram</a> |
+      <a href="https://snapchat.com">Snapchat</a>
+    </div>
+    <p class="mt-2">&copy; 2025 Shahad Fawaz Shadad. </p>
+     </footer>
+     
+        
+     </body>
+</html>
+
