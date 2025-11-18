@@ -47,4 +47,8 @@ while True:
         print(num2, "is zero")
 
     
-    
+    again = input("\nWould you like to try the calculation again? (yes/no): ")
+    if again.lower() != "yes":
+        print("Goodbye!")
+        break
+        
