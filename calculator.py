@@ -31,4 +31,20 @@ while True:
         print(num1, "is equal to", num2)
 
     
-   
+    print("\nNumber status:")
+    if num1 > 0:
+        print(num1, "is positive")
+    elif num1 < 0:
+        print(num1, "is negative")
+    else:
+        print(num1, "is zero")
+
+    if num2 > 0:
+        print(num2, "is positive")
+    elif num2 < 0:
+        print(num2, "is negative")
+    else:
+        print(num2, "is zero")
+
+    
+    
